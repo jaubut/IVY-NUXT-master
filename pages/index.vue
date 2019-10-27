@@ -4,20 +4,20 @@
       <fullWidth
         link="yoga"
         class="full-width-v-two"
-        :title= Yoga.fields.Titre
-        :description= Yoga.fields.description
-        :sousdescription= Yoga.fields.sousdescription
-        :textcolor= Yoga.fields.couleur
+        :title="Yoga.fields.Titre"
+        :description="Yoga.fields.description"
+        :sousdescription="Yoga.fields.sousdescription"
+        textcolor="white"
         imgsrc="img/studio/photo-cours-dan.jpg"
       />
       <div class="container-grid-row">
         <fullWidth
           link="location"
           class="demi-width-v-two"
-          :title= Espace.fields.Titre
-          :description= Espace.fields.description
-          :sousdescription= Espace.fields.sousdescription
-          :textcolor= Espace.fields.couleur
+          title="Yoga.fields.Titre"
+          description="Yoga.fields.description"
+          sousdescription="Yoga.fields.sousdescription"
+          textcolor="white"
           imgsrc="img/studio/photo-loue-espace.jpg"
           logosrc=""
         />
@@ -55,10 +55,10 @@ export default {
       return this.items[2] || {}
     },
     Espace () {
-      return this.items[1] || {}
+      return this.items[0] || {}
     },
     Evenement () {
-      return this.items[0] || {}
+      return this.items[1] || {}
     }
   },
   head () {

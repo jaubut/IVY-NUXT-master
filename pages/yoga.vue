@@ -16,7 +16,7 @@
           description=""
           textcolor="white"
           link=""
-          imgsrc="img/yoga/flow-3-lfs.jpg"
+          imgsrc="img/yoga/flow-3.jpg"
         />
         <div class="demi-width-v-two">
           <div class="infos-center-v-two">
@@ -187,7 +187,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(~static/img/yoga/flow-4-lfs.jpg);
+  background-image: url(~assets/img/yoga/flow-4.jpg);
 }
 @media screen and (max-width: 600px) {
   .taxes {

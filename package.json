@@ -13,10 +13,11 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.8.0",
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/sitemap": "^2.0.0",
+    "contentful": "^7.10.0",
     "nuxt": "^2.0.0",
     "vue-carousel": "^0.18.0",
     "vue-client-only": "^2.0.0"

@@ -5,8 +5,8 @@
         <fullWidth
           link="location"
           class="demi-width-v-two"
-          title="Yoga.fields.Titre"
-          description="Yoga.fields.description"
+          title="items[0].fields.Titre"
+          :description="Yoga.fields.description"
           sousdescription="Yoga.fields.sousdescription"
           textcolor="white"
           imgsrc="img/studio/photo-loue-espace.jpg"

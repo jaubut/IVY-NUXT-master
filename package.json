@@ -20,7 +20,8 @@
     "contentful": "^7.10.0",
     "nuxt": "^2.0.0",
     "vue-carousel": "^0.18.0",
-    "vue-client-only": "^2.0.0"
+    "vue-client-only": "^2.0.0",
+    "vue-script2": "^2.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

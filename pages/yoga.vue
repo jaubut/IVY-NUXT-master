@@ -126,8 +126,7 @@
           Réserve ta classe sur <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Mindbody</a>
         </h2>
         <a class="reserve" target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Réserve ta classe</a>
-        <script src="https://widgets.healcode.com/javascripts/healcode.js" type="text/javascript"></script>
-        <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" ></healcode-widget>
+        <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" />
       </div>
     </div>
   </Layout>
@@ -149,6 +148,28 @@ export default {
       title: 'Espace IVY - Yoga',
       description: 'Créateur de Valeur et de Mouvement l’Espace IVY est une place unique en son genre! Il s’agit à la fois d’un studio de Yoga et d’une galerie d’Art situé dans un grand loft industriel lumineux niché dans l’immeuble Impérial à Granby classé patrimoine culturel du Québec. L’ambiance y est chaleureuse et décontractée ou l’on se plaît à faire du yoga décomplexé sur des mélodies accrocheuses et des rythmes entraînants. La plupart de nos classes sont ouvertes à tous les niveaux. Le studio de Yoga offre une tarification très accessible et marginale puisque aucun abonnement n’est offert. Zéro obligation, pas de prélèvement automatique, tu payes quand tu viens! Que ce soit pour bouger, lâcher prise, croire en toi, ralentir, te sentir plus ancré, plus souple, plus fort ou moins stressé, l’Espace IVY à Granby est une place où se retrouver afin de partager une pratique de Yoga entre amis, collègues ou en famille. Un lieu de rencontre et d’échange qui fait la promotion des Arts par des expositions et des événements. Bonne humeur à volonté et imperfections bienvenues!'
 
+    }
+  },
+  mounted () {
+    if (!window.healCode) {
+      const script = document.createElement('script')
+      script.onload = this.onScriptLoaded
+      script.type = 'text/javascript'
+      script.src = 'https://widgets.healcode.com/javascripts/healcode.js'
+      document.head.appendChild(script)
+    } else {
+      this.onScriptLoaded()
+    }
+  },
+  methods: {
+    onScriptLoaded (event = null) {
+      if (event) {
+        console.log('Was added')
+      } else {
+        console.log('Already existed')
+      }
+      console.log(window.healCode)
+      window.healCode('h1').append(` <span>(CDN script has loaded)</span>`)
     }
   },
   head () {

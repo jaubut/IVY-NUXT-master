@@ -6,7 +6,7 @@
           link="location"
           class="demi-width-v-two"
           title="items[0].fields.Titre"
-          :description="Yoga.fields.description"
+          description="Yoga.fields.description"
           sousdescription="Yoga.fields.sousdescription"
           textcolor="white"
           imgsrc="img/studio/photo-loue-espace.jpg"

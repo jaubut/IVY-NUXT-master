@@ -126,6 +126,8 @@
           Réserve ta classe sur <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Mindbody</a>
         </h2>
         <a class="reserve" target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Réserve ta classe</a>
+        <script src="https://widgets.healcode.com/javascripts/healcode.js" type="text/javascript"></script>
+        <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" ></healcode-widget>
       </div>
     </div>
   </Layout>

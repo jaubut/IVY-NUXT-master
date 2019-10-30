@@ -1,15 +1,6 @@
 <template>
   <Layout>
     <div class="">
-      <fullWidth
-        link="yoga"
-        class="full-width-v-two"
-        :title="Yoga.fields.Titre"
-        :description="Yoga.fields.description"
-        :sousdescription="Yoga.fields.sousdescription"
-        textcolor="white"
-        imgsrc="img/studio/photo-cours-dan.jpg"
-      />
       <div class="container-grid-row">
         <fullWidth
           link="location"

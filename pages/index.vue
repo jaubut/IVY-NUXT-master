@@ -27,8 +27,9 @@
 </template>
 
 <script>
-import axios from 'axios'
+import Airtable from 'airtable'
 import fullWidth from '~/components/fullWidthBloc.vue'
+const base = new Airtable({ apiKey: 'keyYpAgTFas9oMW80' }).base('appbpcui5g2iA9Mha')
 
 export default {
   components: {
@@ -65,25 +66,20 @@ export default {
     }
   },
   mounted () {
-    this.loadItems()
+    this.loadData()
   },
   methods: {
-    loadItems () {
-      // Init variables
+    loadData () {
       const self = this
-      const appId = 'appbpcui5g2iA9Mha'
-      const appKey = 'keyYpAgTFas9oMW80' // Read Only Key! :D
       this.items = []
-      axios.get(
-        'https://api.airtable.com/v0/' + appId + '/Accueil', {
-          headers: {
-            Authorization: 'Bearer ' + appKey
-          }
-        }
-      ).then(function (response) {
-        self.items = response.data.records
-      }).catch(function (error) {
-        console.log(error)
+      base('Accueil').select({
+        view: 'Grid view'
+      }).eachPage(function page (records, fetchNextPage) {
+        records.forEach(function (record) {
+          self.items = records
+        })
+      }, function done (err) {
+        if (err) { console.log(err) }
       })
     }
   }

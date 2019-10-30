@@ -151,7 +151,7 @@ export default {
     }
   },
   mounted () {
-    if (!window.healCode) {
+    if (!window.healcodeWidget) {
       const script = document.createElement('script')
       script.onload = this.onScriptLoaded
       script.type = 'text/javascript'
@@ -169,7 +169,7 @@ export default {
         console.log('Already existed')
       }
       console.log(window.healCode)
-      window.healCode('h1').append(` <span>(CDN script has loaded)</span>`)
+      window.healcodeWidget('h1').append(` <span>(CDN script has loaded)</span>`)
     }
   },
   head () {

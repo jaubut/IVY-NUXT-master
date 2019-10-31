@@ -6,7 +6,6 @@
           <h2 class="">
             Viens yogater à l'espace Ivy !
           </h2>
-          <a class="reserve" target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Réserve ta classe</a>
         </div>
       </div>
       <div class="container-grid-row">
@@ -122,10 +121,9 @@
         <img class="image" src="~/assets/img/horaire/horaire-web.png" alt="">
       </div>
       <div class="container-column">
-        <h2 class="section-title">
+        <h2 ref="first-page" class="section-title">
           Réserve ta classe sur <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Mindbody</a>
         </h2>
-        <a class="reserve" target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Réserve ta classe</a>
         <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" />
       </div>
     </div>
@@ -170,6 +168,12 @@ export default {
       }
       console.log(window.healCode)
       window.healcodeWidget('h1').append(` <span>(CDN script has loaded)</span>`)
+    },
+    scrollMeTo (refName) {
+      const element = this.$refs[refName]
+      const top = element.offsetTop
+
+      window.scrollTo(0, top)
     }
   },
   head () {

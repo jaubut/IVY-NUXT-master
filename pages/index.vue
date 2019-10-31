@@ -1,13 +1,21 @@
 <template>
   <Layout>
     <div class="">
+      <fullWidth
+        link="yoga"
+        class="full-width-v-two"
+        title="Yoga"
+        description="Toutes les classes sont ouvertes."
+        sousdescription="Les portes ouvrent 15 minutes avant le cours."
+        textcolor="white"
+        imgsrc="img/studio/photo-cours-dan.jpg"
+      />
       <div class="container-grid-row">
         <fullWidth
           link="location"
           class="demi-width-v-two"
-          title="items[0].fields.Titre"
-          description="Yoga.fields.description"
-          sousdescription="Yoga.fields.sousdescription"
+          title="Location"
+          description="Loue l'espace pour tes projets!"
           textcolor="white"
           imgsrc="img/studio/photo-loue-espace.jpg"
           logosrc=""
@@ -27,9 +35,10 @@
 </template>
 
 <script>
-import Airtable from 'airtable'
+import { createClient } from '@/plugins/contentful'
 import fullWidth from '~/components/fullWidthBloc.vue'
-const base = new Airtable({ apiKey: 'keyYpAgTFas9oMW80' }).base('appbpcui5g2iA9Mha')
+
+const client = createClient()
 
 export default {
   components: {
@@ -37,20 +46,8 @@ export default {
   },
   data () {
     return {
-      items: [],
       title: 'Espace IVY',
       description: 'Créateur de Valeur et de Mouvement l’Espace IVY est une place unique en son genre! Il s’agit à la fois d’un studio de Yoga et d’une galerie d’Art situé dans un grand loft industriel lumineux niché dans l’immeuble Impérial à Granby classé patrimoine culturel du Québec. L’ambiance y est chaleureuse et décontractée ou l’on se plaît à faire du yoga décomplexé sur des mélodies accrocheuses et des rythmes entraînants. La plupart de nos classes sont ouvertes à tous les niveaux. Le studio de Yoga offre une tarification très accessible et marginale puisque aucun abonnement n’est offert. Zéro obligation, pas de prélèvement automatique, tu payes quand tu viens! Que ce soit pour bouger, lâcher prise, croire en toi, ralentir, te sentir plus ancré, plus souple, plus fort ou moins stressé, l’Espace IVY à Granby est une place où se retrouver afin de partager une pratique de Yoga entre amis, collègues ou en famille. Un lieu de rencontre et d’échange qui fait la promotion des Arts par des expositions et des événements. Bonne humeur à volonté et imperfections bienvenues!'
-    }
-  },
-  computed: {
-    Yoga () {
-      return this.items[2] || {}
-    },
-    Espace () {
-      return this.items[0] || {}
-    },
-    Evenement () {
-      return this.items[1] || {}
     }
   },
   head () {
@@ -65,23 +62,17 @@ export default {
       ]
     }
   },
-  mounted () {
-    this.loadData()
-  },
-  methods: {
-    loadData () {
-      const self = this
-      this.items = []
-      base('Accueil').select({
-        view: 'Grid view'
-      }).eachPage(function page (records, fetchNextPage) {
-        records.forEach(function (record) {
-          self.items = records
-        })
-      }, function done (err) {
-        if (err) { console.log(err) }
+  asyncData ({ env, params }) {
+    return Promise.all([
+      client.getEntries({
+        'content_type': 'pageIndex',
+        order: '-sys.createdAt'
       })
-    }
+    ]).then(([entries]) => {
+      return {
+        messages: entries.items
+      }
+    }).catch(console.error)
   }
 }
 </script>

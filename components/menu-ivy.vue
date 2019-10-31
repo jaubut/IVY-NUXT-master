@@ -51,7 +51,8 @@ export default {
     color: #FCDA1E;
 }
 .button-ivy p {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 .container-menu {
   width: 100%;

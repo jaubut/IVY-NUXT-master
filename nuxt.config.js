@@ -53,11 +53,15 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/markdownit',
     ['@nuxtjs/google-analytics', {
       id: 'UA-149485074-1'
     }],
     '@nuxtjs/sitemap'
   ],
+  markdownit: {
+    injected: true
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

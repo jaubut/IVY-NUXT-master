@@ -9,11 +9,7 @@
     <p v-if="description !== null">
       {{ description }}
     </p>
-    <ul v-if="descriptionlist !== null">
-      <li v-for="item in descriptionlist" :key="item">
-        {{ item }}
-      </li>
-    </ul>
+    <div v-if="descriptionlist !== null" v-html="$md.render(descriptionlist)" />
   </div>
 </template>
 
@@ -34,7 +30,7 @@ export default {
       default: null
     },
     descriptionlist: {
-      type: Array,
+      type: String,
       default: null,
       require: true
     },

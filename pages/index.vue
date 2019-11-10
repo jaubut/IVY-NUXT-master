@@ -1,44 +1,40 @@
 <template>
-  <Layout>
-    <div class="">
+  <div class="">
+    <fullWidth
+      link="yoga"
+      class="full-width-v-two"
+      :title="indexyoga.fields.title"
+      :description="indexyoga.fields.description"
+      :sousdescription="indexyoga.fields.sousDescription"
+      textcolor="white"
+      :imgsrc="indexyoga.fields.imgsrc.fields.file.url"
+    />
+    <div class="container-grid-row">
       <fullWidth
-        link="yoga"
-        class="full-width-v-two"
-        title="Yoga"
-        description="Toutes les classes sont ouvertes."
-        sousdescription="Les portes ouvrent 15 minutes avant le cours."
+        link="location"
+        class="demi-width-v-two"
+        :title="indexlocation.fields.title"
+        :description="indexlocation.fields.description"
+        :sousdescription="indexlocation.fields.sousDescription"
         textcolor="white"
-        imgsrc="img/studio/photo-cours-dan.jpg"
+        :imgsrc="indexlocation.fields.imgsrc.fields.file.url"
       />
-      <div class="container-grid-row">
-        <fullWidth
-          link="location"
-          class="demi-width-v-two"
-          title="Location"
-          description="Loue l'espace pour tes projets!"
-          textcolor="white"
-          imgsrc="img/studio/photo-loue-espace.jpg"
-          logosrc=""
-        />
-        <fullWidth
-          link="evenements"
-          class="demi-width-v-two"
-          title="Événements & Art"
-          description="Découvre, explore, partage!"
-          sousdescription=""
-          textcolor="white"
-          imgsrc="img/studio/eka.jpg"
-        />
-      </div>
+      <fullWidth
+        link="evenements"
+        class="demi-width-v-two"
+        :title="indexevenement.fields.title"
+        :description="indexevenement.fields.description"
+        :sousdescription="indexevenement.fields.sousDescription"
+        textcolor="white"
+        :imgsrc="indexevenement.fields.imgsrc.fields.file.url"
+      />
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>
-import { createClient } from '@/plugins/contentful'
+import client from '@/plugins/contentful'
 import fullWidth from '~/components/fullWidthBloc.vue'
-
-const client = createClient()
 
 export default {
   components: {
@@ -62,17 +58,19 @@ export default {
       ]
     }
   },
-  asyncData ({ env, params }) {
-    return Promise.all([
-      client.getEntries({
-        'content_type': 'pageIndex',
-        order: '-sys.createdAt'
+  asyncData () {
+    return client
+      .getEntries({
+        content_type: 'pageIndex'
       })
-    ]).then(([entries]) => {
-      return {
-        messages: entries.items
-      }
-    }).catch(console.error)
+      .then((entries) => {
+        return {
+          indexyoga: entries.items[0].fields.blocDintro[0],
+          indexlocation: entries.items[0].fields.blocDintro[1],
+          indexevenement: entries.items[0].fields.blocDintro[2]
+        }
+      })
+      .catch(e => console.log(e))
   }
 }
 </script>

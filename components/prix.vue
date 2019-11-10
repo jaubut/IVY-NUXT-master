@@ -1,5 +1,5 @@
 <template>
-  <div :style="'color:' + textcolor +'; background:' + backcolor +';'">
+  <div>
     <div class="container-price">
       <h2>{{ title }}</h2>
       <h4>{{ price }}</h4>
@@ -23,14 +23,6 @@ export default {
     description: {
       type: String,
       default: 'Espace IVY'
-    },
-    textcolor: {
-      type: String,
-      default: 'black'
-    },
-    backcolor: {
-      type: String,
-      default: ''
     },
     link: {
       type: String,

@@ -72,7 +72,7 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   max-width: 20vw;
   padding: 0.75rem;
 }

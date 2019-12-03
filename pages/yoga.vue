@@ -29,10 +29,11 @@
         :key="index"
         :title="descriptif.fields.titre"
         :description="descriptif.fields.description"
+        style="text-align:center;"
       />
     </div>
     <h2 class="section-title">
-      Liste de prix </br><span class="taxes">  Tx in</span>
+      Liste de prix </br><span class="taxes">  Tx in</span></br><a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute"><span class="button-achat">Achat</span></a>
     </h2>
     <div class="container-prix">
       <prices
@@ -155,6 +156,12 @@ export default {
 .taxes {
   font-size: 2rem;
   color: #FCDA1E;
+}
+.button-achat {
+  background: #FCDA1E;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 15px;
 }
 .photo-yoga {
   color: white;

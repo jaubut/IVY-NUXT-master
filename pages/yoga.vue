@@ -57,7 +57,6 @@
     <div class="container-column">
       <img class="image" :src="pageyoga.fields.horaireImage.fields.file.url" alt="">
     </div>
-    -->
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
         {{ pageyoga.fields.horaireDesFetes }}
@@ -67,6 +66,7 @@
     <div class="container-column">
       <img class="image" :src="pageyoga.fields.horaireImageDesFetes.fields.file.url" alt="">
     </div>
+    -->
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
         {{ pageyoga.fields.horaireDapresDesFetes }}

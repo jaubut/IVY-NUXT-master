@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .container-block {
   transition: all .2s ease-in-out;
 }

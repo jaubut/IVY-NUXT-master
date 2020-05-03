@@ -33,7 +33,7 @@
       />
     </div>
     <h2 class="section-title">
-      Liste de prix </br><span class="taxes">  Tx in</span></br><a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute"><span class="button-achat">Achat</span></a>
+      Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
     <div class="container-prix">
       <prices
@@ -47,6 +47,9 @@
         :description="price.fields.description"
       />
     </div>
+    <h2 class="section-title">
+      <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute"><span class="button-achat">Achetez votre abonnement ici :)</span></a>
+    </h2>
     <!--
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
@@ -67,6 +70,7 @@
       <img class="image" :src="pageyoga.fields.horaireImageDesFetes.fields.file.url" alt="">
     </div>
     -->
+    <!--
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
         {{ pageyoga.fields.horaireDapresDesFetes }}
@@ -82,6 +86,7 @@
       </h2>
       <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" />
     </div>
+    -->
   </div>
 </template>
 

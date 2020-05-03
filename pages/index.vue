@@ -1,5 +1,17 @@
 <template>
   <div class="">
+    <div class="container-block full-fb-live">
+      <div class="infos-center-v-two">
+        <a href="https://www.facebook.com/pg/espaceivy/videos/?ref=page_internal" target="_blank">
+          <img width="100" src="@/assets/img/logo/fb-live.svg" alt="">
+          <h1>Yoga en virtuel !</h1>
+          <h3>Rejoins-nous sur <span style="text-decoration:underline;">Facebook</span> pour suivre des classes de yoga en ligne.</h3>
+        </a>
+        <video autoplay class="video-live-dan">
+          <source type="video/mp4" src="@/assets/videos/fb-live-dan.mp4">
+        </video>
+      </div>
+    </div>
     <fullWidth
       link="yoga"
       class="full-width-v-two"
@@ -76,5 +88,21 @@ export default {
 </script>
 
 <style>
-
+.video-live-dan {
+  height: 40vh;
+  width: auto;
+  padding-top: 2.5rem;
+}
+.full-fb-live {
+    position: relative;
+    display: grid;
+    grid-template: 100% / 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    margin: 0 2rem 0.75rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 </style>

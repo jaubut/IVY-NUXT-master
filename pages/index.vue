@@ -8,7 +8,7 @@
           <h3>Rejoins-nous sur <span style="text-decoration:underline;">Facebook</span> pour suivre des classes de yoga en ligne.</h3>
         </a>
         <video autoplay class="video-live-dan">
-          <source type="video/mp4" src="@/assets/videos/fb-live-dan.mp4">
+          <source type="video/mp4" src="@/assets/videos/fb-live-dan-2.mp4">
         </video>
       </div>
     </div>

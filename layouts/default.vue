@@ -54,6 +54,7 @@ h3 {
 a {
     text-decoration: none;
     color: black;
+    transition: 0.5s ease;
 }
 a:hover {
     color: #FCDA1E;

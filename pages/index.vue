@@ -101,7 +101,7 @@ export default {
 <style>
 .video-live-dan {
   height: 40vh;
-  width: 100%;
+  width: auto;
   padding-top: 2.5rem;
 }
 .full-fb-live {

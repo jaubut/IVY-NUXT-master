@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="container-block full-fb-live">
-      <div class="infos-center-v-two">
+      <div class="infos-center-v-two" style="margin:2rem 0;">
         <img width="100" src="@/assets/img/logo/fb-live.svg" alt="">
         <h1>Yoga virtuel !</h1>
         <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé</span></a> pour avoir accès à toutes les classes de yoga en ligne.<br>Tu peux te procurer l'accès virtuel pour seulement <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100066" target="_blank"><strong>20 $ par mois</strong></a> ou <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank"><strong>120 $ pour l'année.</strong></a></h3>
@@ -135,6 +135,15 @@ export default {
   transition: 0.5s ease;
   background: rgba(252, 218, 30, 0.25);
   font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .button-virtuel {
+    font-size: medium;
+  }
+  .video-live-dan {
+    width: 100%;
+    height: 100%;
+  }
 }
 .button-virtuel:hover {
   background: rgb(194, 168, 22);

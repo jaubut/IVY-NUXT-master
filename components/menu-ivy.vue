@@ -69,7 +69,6 @@ export default {
     }
     .menu-ivy {
         justify-content: center;
-        flex-flow: column wrap;
         padding: 15px;
     }
     .fab {

@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .prices {
   display: flex;
   flex-flow: column wrap;
@@ -88,6 +88,13 @@ h4 {
 }
 p {
   font-size: small;
+}
+.container-price a {
+  font-weight: bold;
+}
+.container-price a:hover {
+  color: black !important;
+  text-decoration: underline;
 }
 .container-price {
     text-align: center;

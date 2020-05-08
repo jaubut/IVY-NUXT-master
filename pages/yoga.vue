@@ -36,20 +36,22 @@
       Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
     <div class="button-group">
-      <a @click="prix = true" class="button-virtuel a active">Virtuel seulement</a>
-      <a @click="prix = false" class="button-virtuel b">En studios + virtuel</a>
+      <a @click="prix = true" class="button-virtuel a active">Virtuel</a>
+      <a @click="prix = false" class="button-virtuel b">En Studio + Virtuel</a>
     </div>
     <div v-if="prix === true" class="container-prix">
-      <prices
-        v-for="(price, index) in pageyoga.fields.prixVirtuel"
-        :key="index"
-        :style="'color:' + price.fields.textColor +'; background:' + price.fields.backgroundColor +';'"
-        class="prices"
-        :title="price.fields.title"
-        :price="price.fields.prix"
-        backcolor="white"
-        :description="price.fields.description"
-      />
+      <div class="prices container-price">
+        <h2>Yoga virtuel mensuel</h2>
+        <h4>20 $</h4>
+        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a> pour seulement 20 $ /mois.</p>
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
+      </div>
+      <div style="background:#FCDA1E" class="prices container-price">
+        <h2>Yoga virtuel annuel</h2>
+        <h4>120 $</h4>
+        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a> pour 120 $ /année et <strong>économise 50%.</strong></p>
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix">Achetez</a>
+      </div>
     </div>
     <div v-else class="container-prix">
       <prices
@@ -63,9 +65,6 @@
         :description="price.fields.description"
       />
     </div>
-    <h2 class="section-title">
-      <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute"><span class="button-achat">Achetez votre abonnement ici :)</span></a>
-    </h2>
     <!--
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
@@ -249,6 +248,9 @@ export default {
 }
 .b {
   border-radius: 0 5px 5px 0;
+}
+.cta-prix {
+  border-radius: 5px;
 }
 @media screen and (max-width: 600px) {
   .taxes {

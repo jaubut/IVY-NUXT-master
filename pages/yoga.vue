@@ -46,7 +46,7 @@
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
-      <div style="background:#FCDA1E" class="prices container-price">
+      <div class="prices container-price active">
         <h4>120 $/année<br>(économise 50%)</h4>
         <h2>Yoga virtuel annuel</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
@@ -242,6 +242,10 @@ export default {
 }
 .active {
   background: #fcda1e;
+}
+.active a:hover {
+  color: black;
+  text-decoration: underline;
 }
 .a {
   border-radius: 5px 0 0 5px;

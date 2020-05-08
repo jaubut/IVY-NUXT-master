@@ -11,7 +11,7 @@
           allowFullScreen
         />
         <br />
-        <h3 style="padding:0 15%;">Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé</span></a> pour avoir accès à toutes les classes de yoga en ligne.<br>Tu peux te procurer l'accès virtuel pour seulement <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100066" target="_blank"><strong>20 $ par mois</strong></a> ou <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank"><strong>120 $ pour l'année.</strong></a></h3>
+        <h3 style="padding:0 15%;">Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé</span></a> pour avoir accès à toutes les classes de yoga en ligne.<br>Tu peux te procurer l'accès virtuel pour seulement <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank"><strong>20 $ par mois</strong></a> ou <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank"><strong>120 $ pour l'année.</strong></a></h3>
         <!--
         <video autoplay class="video-live-dan">
           <source type="video/mp4" src="@/assets/videos/fb-live-dan-2.mp4">
@@ -19,7 +19,7 @@
         -->
         <p>*Si tu as déjà un abonnement au studio,<br> bonne nouvelle, les classes en ligne sont incluses,<br> tu n'as qu'à demander l'accès <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><strong>au groupe</strong></a>!</p>
         <div class="button-group">
-          <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100066" target="_blank" class="button-virtuel a">Mensuel 20 $/mois</a>
+          <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel a">Mensuel 20 $/mois</a>
           <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel b active">Annuel 120 $ (économise 50%)</a>
         </div>
       </div>

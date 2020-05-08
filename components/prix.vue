@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .prices {
   display: flex;
   flex-flow: column wrap;

@@ -41,15 +41,15 @@
     </div>
     <div v-if="prix === true" class="container-prix">
       <div class="prices container-price">
+        <h4>20 $/mois</h4>
         <h2>Yoga virtuel mensuel</h2>
-        <h4>20 $</h4>
-        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a> pour seulement 20 $ /mois.</p>
+        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
       <div style="background:#FCDA1E" class="prices container-price">
+        <h4>120 $/année<br>(économise 50%)</h4>
         <h2>Yoga virtuel annuel</h2>
-        <h4>120 $</h4>
-        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a> pour 120 $ /année et <strong>économise 50%.</strong></p>
+        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix">Achetez</a>
       </div>
     </div>
@@ -251,6 +251,20 @@ export default {
 }
 .cta-prix {
   border-radius: 5px;
+}
+.prices {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 20vw;
+  height: 75vh;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 @media screen and (max-width: 600px) {
   .taxes {

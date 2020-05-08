@@ -35,7 +35,23 @@
     <h2 class="section-title">
       Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
-    <div class="container-prix">
+    <div class="button-group">
+      <a @click="prix = true" class="button-virtuel a active">Virtuel seulement</a>
+      <a @click="prix = false" class="button-virtuel b">En studios + virtuel</a>
+    </div>
+    <div v-if="prix === true" class="container-prix">
+      <prices
+        v-for="(price, index) in pageyoga.fields.prixVirtuel"
+        :key="index"
+        :style="'color:' + price.fields.textColor +'; background:' + price.fields.backgroundColor +';'"
+        class="prices"
+        :title="price.fields.title"
+        :price="price.fields.prix"
+        backcolor="white"
+        :description="price.fields.description"
+      />
+    </div>
+    <div v-else class="container-prix">
       <prices
         v-for="(price, index) in pageyoga.fields.prix"
         :key="index"
@@ -105,7 +121,8 @@ export default {
   data () {
     return {
       title: 'Espace IVY - Yoga',
-      description: 'Créateur de Valeur et de Mouvement l’Espace IVY est une place unique en son genre! Il s’agit à la fois d’un studio de Yoga et d’une galerie d’Art situé dans un grand loft industriel lumineux niché dans l’immeuble Impérial à Granby classé patrimoine culturel du Québec. L’ambiance y est chaleureuse et décontractée ou l’on se plaît à faire du yoga décomplexé sur des mélodies accrocheuses et des rythmes entraînants. La plupart de nos classes sont ouvertes à tous les niveaux. Le studio de Yoga offre une tarification très accessible et marginale puisque aucun abonnement n’est offert. Zéro obligation, pas de prélèvement automatique, tu payes quand tu viens! Que ce soit pour bouger, lâcher prise, croire en toi, ralentir, te sentir plus ancré, plus souple, plus fort ou moins stressé, l’Espace IVY à Granby est une place où se retrouver afin de partager une pratique de Yoga entre amis, collègues ou en famille. Un lieu de rencontre et d’échange qui fait la promotion des Arts par des expositions et des événements. Bonne humeur à volonté et imperfections bienvenues!'
+      description: 'Créateur de Valeur et de Mouvement l’Espace IVY est une place unique en son genre! Il s’agit à la fois d’un studio de Yoga et d’une galerie d’Art situé dans un grand loft industriel lumineux niché dans l’immeuble Impérial à Granby classé patrimoine culturel du Québec. L’ambiance y est chaleureuse et décontractée ou l’on se plaît à faire du yoga décomplexé sur des mélodies accrocheuses et des rythmes entraînants. La plupart de nos classes sont ouvertes à tous les niveaux. Le studio de Yoga offre une tarification très accessible et marginale puisque aucun abonnement n’est offert. Zéro obligation, pas de prélèvement automatique, tu payes quand tu viens! Que ce soit pour bouger, lâcher prise, croire en toi, ralentir, te sentir plus ancré, plus souple, plus fort ou moins stressé, l’Espace IVY à Granby est une place où se retrouver afin de partager une pratique de Yoga entre amis, collègues ou en famille. Un lieu de rencontre et d’échange qui fait la promotion des Arts par des expositions et des événements. Bonne humeur à volonté et imperfections bienvenues!',
+      prix: true
     }
   },
   asyncData () {
@@ -199,9 +216,46 @@ export default {
   font-size: 1.2rem;
   margin: 0.1rem;
 }
+.button-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+.button-virtuel {
+  padding: 15px;
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  background: white;
+  font-size: 1.5rem;
+}
+.button-virtuel:hover {
+  background: rgb(194, 168, 22);
+  color: black;
+}
+.active {
+  background: #fcda1e;
+}
+.a {
+  border-radius: 5px 0 0 5px;
+}
+.b {
+  border-radius: 0 5px 5px 0;
+}
 @media screen and (max-width: 600px) {
   .taxes {
     font-size: small;
+  }
+  .button-virtuel {
+    font-size: medium;
   }
 }
 </style>

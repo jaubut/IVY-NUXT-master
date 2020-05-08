@@ -266,12 +266,22 @@ export default {
   border-width: 1px;
   border-color: black;
 }
+.prices h2 {
+  padding: 0;
+  margin: 0;
+  font-size: xx-large;
+}
 @media screen and (max-width: 600px) {
   .taxes {
     font-size: small;
   }
   .button-virtuel {
     font-size: medium;
+  }
+  .prices {
+    width: 70vw;
+    height: auto;
+    justify-content: center;
   }
 }
 </style>

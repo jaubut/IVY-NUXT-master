@@ -2,7 +2,9 @@
   <div class="">
     <div class="container-block full-fb-live">
       <div class="infos-center-v-two" style="margin:2rem 0;">
-        <img width="100" src="@/assets/img/logo/fb-live.svg" alt="">
+        <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank">
+          <img width="100" src="@/assets/img/logo/fb-live-jaune.svg" alt="">
+        </a>
         <h1>Yoga virtuel !</h1>
         <iframe
           src="https://giphy.com/embed/eJcgZMVLgXItiJTXSK"
@@ -10,8 +12,10 @@
           class="video-live-dan"
           allowFullScreen
         />
-        <br />
-        <h3 style="padding:0 15%;">Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé</span></a> pour avoir accès à toutes les classes de yoga en ligne.<br>Tu peux te procurer l'accès virtuel pour seulement <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank"><strong>20 $ par mois</strong></a> ou <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank"><strong>120 $ pour l'année.</strong></a></h3>
+        <br>
+        <h3 style="padding:0 15%;">
+          Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé</span></a> pour avoir accès à toutes les classes de yoga en ligne.<br>Tu peux te procurer l'accès virtuel pour seulement <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank"><strong>20 $ par mois</strong></a> ou <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank"><strong>120 $ pour l'année.</strong></a>
+        </h3>
         <!--
         <video autoplay class="video-live-dan">
           <source type="video/mp4" src="@/assets/videos/fb-live-dan-2.mp4">
@@ -133,8 +137,9 @@ export default {
   justify-content: center;
   align-content: center;
   cursor: pointer;
+  border: 1px solid black;
   transition: 0.5s ease;
-  background: rgba(252, 218, 30, 0.25);
+  background: white;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 600px) {
@@ -151,7 +156,7 @@ export default {
   color: black;
 }
 .active {
-  background: rgba(252, 218, 30, 1);
+  background: #fcda1e;
 }
 .a {
   border-radius: 5px 0 0 5px;

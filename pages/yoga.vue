@@ -41,22 +41,19 @@
     </div>
     <div v-if="prix === true" class="container-prix">
       <div class="prices container-price">
-        <h4>30 $ pour un mois seulement</h4>
-        <h2>Yoga virtuel spontané</h2>
+        <h2>30 $: 1 mois seulement</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://ivy-yoga.us5.list-manage.com/track/click?u=969c1f8068212429343512f19&id=37f1515db1&e=2e85ef66bd" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
       <div class="prices container-price">
-        <h4>20 $/mois</h4>
-        <h2>Yoga virtuel mensuel</h2>
+        <h2>20 $: par mois<br>(12 mensualités)</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
-      <div class="prices container-price active">
-        <h4>120 $/année<br>(économise 50%)</h4>
-        <h2>Yoga virtuel annuel</h2>
+      <div class="prices container-price">
+        <h2>120 $: pour un an<br>(économise 50%)</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
-        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix">Achetez</a>
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
     </div>
     <div v-else class="container-prix">
@@ -268,13 +265,16 @@ export default {
   justify-content: space-around;
   text-align: center;
   width: 20vw;
-  height: 75vh;
+  height: auto;
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
+}
+.prices p {
+  padding: 10vh 0;
 }
 .prices h2 {
   padding: 0;

@@ -41,6 +41,12 @@
     </div>
     <div v-if="prix === true" class="container-prix">
       <div class="prices container-price">
+        <h4>30 $ pour un mois seulement</h4>
+        <h2>Yoga virtuel spontané</h2>
+        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
+        <a href="https://ivy-yoga.us5.list-manage.com/track/click?u=969c1f8068212429343512f19&id=37f1515db1&e=2e85ef66bd" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
+      </div>
+      <div class="prices container-price">
         <h4>20 $/mois</h4>
         <h2>Yoga virtuel mensuel</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>

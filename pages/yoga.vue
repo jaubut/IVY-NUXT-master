@@ -47,11 +47,11 @@
       </div>
       <div class="prices container-price">
         <h2>20 $: par mois<br>(12 mensualités)</h2>
-        <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
+        <p class="middle">Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
       <div class="prices container-price">
-        <h2>120 $: pour un an<br>(économise 50%)</h2>
+        <h2>120 $: pour un an<br>(économise 50% vs 20 $ par mois & + de 60 % vs 30 $ le mois)</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
@@ -275,6 +275,9 @@ export default {
 }
 .prices p {
   padding: 10vh 0;
+}
+.middle {
+  padding: 12.5vh 0 !important;
 }
 .prices h2 {
   padding: 0;

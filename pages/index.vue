@@ -23,7 +23,7 @@
         -->
         <p>*Si tu as déjà un abonnement au studio,<br> bonne nouvelle, les classes en ligne sont incluses,<br> tu n'as qu'à demander l'accès <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><strong>au groupe</strong></a> directement!</p>
         <div class="button-group">
-          <a href="https://ivy-yoga.us5.list-manage.com/track/click?u=969c1f8068212429343512f19&id=37f1515db1&e=2e85ef66bd" target="_blank" class="button-virtuel a active">30 $ (pour 1 mois seulement)</a>
+          <a href="https://ivy-yoga.us5.list-manage.com/track/click?u=969c1f8068212429343512f19&id=37f1515db1&e=2e85ef66bd" target="_blank" class="button-virtuel a active">30 $ (le mois)</a>
           <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel active">Mensuel 20 $ (par mois)</a>
           <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel b active">Annuel 120 $ (économise 50%)</a>
         </div>

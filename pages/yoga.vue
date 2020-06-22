@@ -41,6 +41,7 @@
     </div>
     <div v-if="prix === true" class="container-prix">
       <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
+      <br>
       <prices
         v-for="(price, index) in pageyoga.fields.prix"
         :key="index"
@@ -50,6 +51,7 @@
         :price="price.fields.prix"
         backcolor="white"
         :description="price.fields.description"
+        :link="price.fields.liens"
       />
     </div>
     <div v-else class="container-prix">

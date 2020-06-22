@@ -4,6 +4,7 @@
       <h2>{{ title }}</h2>
       <h4>{{ price }}</h4>
       <p>{{ description }}</p>
+      <a target="_blank" :href="link">Achetez</a>
     </div>
   </div>
 </template>
@@ -91,10 +92,23 @@ p {
 }
 .container-price a {
   font-weight: bold;
+  padding: 15px;
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  background: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background: white;
 }
 .container-price a:hover {
-  color: black !important;
-  text-decoration: underline;
+  background: rgb(252, 218, 30);
+  color: black;
 }
 .container-price {
     text-align: center;

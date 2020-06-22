@@ -36,10 +36,23 @@
       Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
     <div class="button-group">
-      <a class="button-virtuel a active" @click="prix = true">Virtuel</a>
-      <a class="button-virtuel b" @click="prix = false">En Studio + Virtuel</a>
+      <a class="button-virtuel a active" @click="prix = false">En Studio + Virtuel</a>
+      <a class="button-virtuel b" @click="prix = true">Virtuel</a>
     </div>
     <div v-if="prix === true" class="container-prix">
+      <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
+      <prices
+        v-for="(price, index) in pageyoga.fields.prix"
+        :key="index"
+        :style="'color:' + price.fields.textColor +'; background:' + price.fields.backgroundColor +';'"
+        class="prices"
+        :title="price.fields.title"
+        :price="price.fields.prix"
+        backcolor="white"
+        :description="price.fields.description"
+      />
+    </div>
+    <div v-else class="container-prix">
       <div class="prices container-price">
         <h2>30 $: le mois</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
@@ -57,19 +70,6 @@
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100067" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
-    </div>
-    <div v-else class="container-prix">
-      <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
-      <prices
-        v-for="(price, index) in pageyoga.fields.prix"
-        :key="index"
-        :style="'color:' + price.fields.textColor +'; background:' + price.fields.backgroundColor +';'"
-        class="prices"
-        :title="price.fields.title"
-        :price="price.fields.prix"
-        backcolor="white"
-        :description="price.fields.description"
-      />
     </div>
     <!--
     <div class="section-title">

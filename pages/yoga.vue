@@ -36,8 +36,8 @@
       Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
     <div class="button-group">
-      <a @click="prix = true" class="button-virtuel a active">Virtuel</a>
-      <a @click="prix = false" class="button-virtuel b">En Studio + Virtuel</a>
+      <a class="button-virtuel a active" @click="prix = true">Virtuel</a>
+      <a class="button-virtuel b" @click="prix = false">En Studio + Virtuel</a>
     </div>
     <div v-if="prix === true" class="container-prix">
       <div class="prices container-price">
@@ -47,7 +47,9 @@
       </div>
       <div class="prices container-price">
         <h2>20 $: par mois<br>(12 mensualités)</h2>
-        <p class="middle">Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
+        <p class="middle">
+          Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.
+        </p>
         <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=40&prodid=104" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>
       <div class="prices container-price">
@@ -57,6 +59,7 @@
       </div>
     </div>
     <div v-else class="container-prix">
+      <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
       <prices
         v-for="(price, index) in pageyoga.fields.prix"
         :key="index"

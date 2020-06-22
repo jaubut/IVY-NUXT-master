@@ -1,7 +1,8 @@
 <template>
   <div class="container-block">
     <div class="infos-center-v-two" style="margin:2rem 0;">
-      <h1>Réouverture du Studio<br> dès le lundi 29 juin !</h1>
+      <h1>Réouverture du Studio<br>dès le lundi 29 juin !</h1>
+      <br>
       <img src="https://scontent.fymq2-1.fna.fbcdn.net/v/t1.0-9/104682916_891930587953834_2044655645630605935_o.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=Ae95h3BbbMYAX8KctU2&_nc_ht=scontent.fymq2-1.fna&oh=ef538fc9528dcb50ca5c8a37d32931ae&oe=5F179B29" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">

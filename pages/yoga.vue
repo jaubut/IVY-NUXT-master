@@ -93,7 +93,6 @@
       <img class="image" :src="pageyoga.fields.horaireImageDesFetes.fields.file.url" alt="">
     </div>
     -->
-    <!--
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
         {{ pageyoga.fields.horaireDapresDesFetes }}
@@ -109,7 +108,6 @@
       </h2>
       <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="bd11686917a9" data-widget-version="1" />
     </div>
-    -->
   </div>
 </template>
 

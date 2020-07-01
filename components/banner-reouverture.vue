@@ -6,9 +6,8 @@
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">
-        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100023" target="_blank">Mois d'introduction<br>pour seulement 50 $</a>.<br></br>Plus de 15 cours en Studio, au Parc et en Ligne.
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100023" target="_blank">Mois d'introduction<br>pour seulement 50 $</a>.<br>(Valable 1 fois par personne.)<br></br>Plus de 15 cours en Studio, au Parc et en Ligne.
       </h3>
-      <br><p>Valable 1 fois par personne.</p>
       <!--
     <video autoplay class="video-live-dan">
         <source type="video/mp4" src="@/assets/videos/fb-live-dan-2.mp4">

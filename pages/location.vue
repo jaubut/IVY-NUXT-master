@@ -36,7 +36,7 @@
       />
     </div>
     <h2 class="section-title">
-      Liste de prix <br><span class="taxes">  Tx in</span>
+      Liste de prix <br><!--<span class="taxes">  Tx in</span>-->
     </h2>
     <div class="container-prix">
       <prices

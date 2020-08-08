@@ -6,7 +6,11 @@
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">
+<<<<<<< HEAD
         Valable jusqu'au 7 Août seulement<br/>12 cours en Studio, au Parc et en Ligne.
+=======
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100023" target="_blank">Mois d'introduction<br>pour seulement 50 $</a>.<br>(Valable 1 fois par personne.)<br></br>Plus de 15 cours en Studio, au Parc et en Ligne.
+>>>>>>> parent of a7d9e42... allo reouverture
       </h3>
       <!--
     <video autoplay class="video-live-dan">

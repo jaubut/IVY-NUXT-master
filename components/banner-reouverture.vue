@@ -1,7 +1,7 @@
 <template>
   <div class="container-block">
     <div class="infos-center-v-two" style="margin:2rem 0;">
-      <h1>Mois<br>d'introduction pour seulement 50 $</h1>
+      <h1>Mois d'introduction<br>pour seulement 50 $</h1>
       <br>
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>

@@ -6,7 +6,7 @@
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">
-        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank">Valable 1 fois par personne.
+        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank">(valable 1 fois par personne)
       </h3>
       <!--
     <video autoplay class="video-live-dan">

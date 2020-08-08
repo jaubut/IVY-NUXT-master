@@ -1,12 +1,12 @@
 <template>
   <div class="container-block">
     <div class="infos-center-v-two" style="margin:2rem 0;">
-      <h1>Promo<br>d'intro à 40 $ !</h1>
+      <h1>Mois<br>d'introduction pour seulement 50 $</h1>
       <br>
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">
-        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100023" target="_blank">Mois d'introduction<br>pour seulement 50 $</a>.<br>(Valable 1 fois par personne.)<br/>Plus de 15 cours en Studio, au Parc et en Ligne.
+        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank">Valable 1 fois par personne.
       </h3>
       <!--
     <video autoplay class="video-live-dan">
@@ -14,7 +14,7 @@
     </video>
     -->
       <div class="button-group">
-        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=431828&stype=43&prodid=100070" target="_blank" class="button-virtuel c active">Me procurer 4 semaines à 40 $</a>
+        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank" class="button-virtuel c active">Me procurer mon mois d'introduction 50 $</a>
       </div>
     </div>
   </div>

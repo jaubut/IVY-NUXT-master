@@ -6,7 +6,7 @@
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
       <h3 style="" class="text-cover">
-        Valable jusqu'au 7 Août seulement.)<br></br>12 cours en Studio, au Parc et en Ligne.
+        Valable jusqu'au 7 Août seulement<br/>12 cours en Studio, au Parc et en Ligne.
       </h3>
       <!--
     <video autoplay class="video-live-dan">

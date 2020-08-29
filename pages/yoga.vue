@@ -83,15 +83,6 @@
     <div class="container-column">
       <img class="image" :src="pageyoga.fields.horaireImage.fields.file.url" alt="">
     </div>
-    <div class="section-title">
-      <h2 style="padding: 0; margin: 0;">
-        {{ pageyoga.fields.horaireDesFetes }}
-      </h2>
-      <h3>Mise à jour sur <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Mindbody</a>. Sujet à changement sans préavis.</h3>
-    </div>
-    <div class="container-column">
-      <img class="image" :src="pageyoga.fields.horaireImageDesFetes.fields.file.url" alt="">
-    </div>
     -->
     <div class="section-title">
       <h2 style="padding: 0; margin: 0;">
@@ -101,6 +92,15 @@
     </div>
     <div class="container-column">
       <img class="image" :src="pageyoga.fields.horaireImageDapresDesFete.fields.file.url" alt="">
+    </div>
+    <div class="section-title">
+      <h2 style="padding: 0; margin: 0;">
+        {{ pageyoga.fields.horaireDesFetes }}
+      </h2>
+      <h3>Mise à jour sur <a target="_blank" href="https://mindbody.io/fitness/studios/ivy-espace-yoga-arts-communaute">Mindbody</a>. Sujet à changement sans préavis.</h3>
+    </div>
+    <div class="container-column">
+      <img class="image" :src="pageyoga.fields.horaireImageDesFetes.fields.file.url" alt="">
     </div>
     <div class="container-column">
       <h2 ref="first-page" class="section-title">

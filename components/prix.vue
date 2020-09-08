@@ -2,7 +2,7 @@
   <div>
     <div class="container-price">
       <h2>{{ title }}</h2>
-      <h4>{{ price }}</h4>
+      <h4>{{ price }} <span class="prix-b">{{ reduction }}</span></h4>
       <p>{{ description }}</p>
       <a target="_blank" :href="link">Achetez</a>
     </div>
@@ -20,6 +20,10 @@ export default {
     price: {
       type: String,
       default: '15$'
+    },
+    reduction: {
+      type: String,
+      default: ''
     },
     description: {
       type: String,
@@ -86,6 +90,10 @@ h2 {
 h4 {
   font-size: 1.5rem;
   margin: 0;
+}
+.prix-b {
+  text-decoration: line-through;
+  color: rgb(114, 114, 114);
 }
 p {
   font-size: small;

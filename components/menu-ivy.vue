@@ -2,7 +2,7 @@
   <div class="menu-ivy">
     <div class="logo-ivy">
       <n-link to="/">
-        <img src="~/assets/img/logo/logo-header.svg" width="120">
+        <img src="~/assets/img/logo/logo-ivy-yoga.svg" width="120">
       </n-link>
     </div>
     <div class="container-row container-menu">

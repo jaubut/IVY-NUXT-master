@@ -36,12 +36,13 @@
       Liste de prix <!--<br><span class="taxes">  Tx in</span>-->
     </h2>
     <div class="button-group">
-      <a class="button-virtuel a active" @click="prix = true">En Studio + Virtuel</a>
+      <a class="button-virtuel a active" @click="prix = true">En Studio</a>
       <a class="button-virtuel b" @click="prix = false">Virtuel</a>
     </div>
     <div v-if="prix === true" class="container-prix">
-      <h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
+      <!--<h3>Rejoins-nous sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span style="text-decoration:underline;">groupe Facebook privé: <span style="font-weight:bold;">Ivy Yoga - Cours en Ligne</span></span></a> pour avoir accès à toutes les classes de yoga.</h3>
       <br>
+      -->
       <prices
         v-for="(price, index) in pageyoga.fields.prix"
         :key="index"
@@ -175,6 +176,10 @@ export default {
 </script>
 
 <style scoped>
+.prix-b {
+  text-decoration: line-through;
+  color: rgb(114, 114, 114);
+}
 .reserve {
   grid-template: 1/1/2/2;
   display: flex;
@@ -182,7 +187,7 @@ export default {
   align-items: center;
   border: none;
   color: black;
-  background-color: #FCDA1E;
+  background-color: #FAC8A2;
   width: 10rem;
   height: 3rem;
   border-radius: 5px;
@@ -190,10 +195,10 @@ export default {
 }
 .taxes {
   font-size: 2rem;
-  color: #FCDA1E;
+  color: #FAC8A2;
 }
 .button-achat {
-  background: #FCDA1E;
+  background: #FAC8A2;
   color: black;
   padding: 5px 25px;
   border-radius: 15px;
@@ -232,11 +237,11 @@ export default {
   font-size: 1.5rem;
 }
 .button-virtuel:hover {
-  background: rgb(194, 168, 22);
+  background: #d8ad8c;
   color: black;
 }
 .active {
-  background: #fcda1e;
+  background: #FAC8A2;
 }
 .active a:hover {
   color: black;

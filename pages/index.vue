@@ -139,11 +139,11 @@ export default {
   }
 }
 .button-virtuel:hover {
-  background: rgb(194, 168, 22);
+  background: #b49074;
   color: black;
 }
 .active {
-  background: #fcda1e;
+  background: #FAC8A2;
 }
 .a {
   border-radius: 5px 0 0 5px;

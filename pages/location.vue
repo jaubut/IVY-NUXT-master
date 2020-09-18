@@ -111,7 +111,7 @@ export default {
 }
 .taxes {
   font-size: 2rem;
-  color: #FCDA1E;
+  color: #FAC8A2;
 }
 @media screen and (max-width: 600px) {
   .taxes {

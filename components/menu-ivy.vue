@@ -23,8 +23,8 @@
       </div>
     </div>
     <div class="social-menu">
-      <a href="https://www.instagram.com/espaceivy/" target="_blank"><i class="fab fa-instagram" /></a>
-      <a href="https://www.facebook.com/espaceivy/" target="_blank"><i class="fab fa-facebook-square" /></a>
+      <a href="https://www.instagram.com/ivyyoga.ca/" target="_blank"><i class="fab fa-instagram" /></a>
+      <a href="https://www.facebook.com/ivyyoga.ca/" target="_blank"><i class="fab fa-facebook-square" /></a>
     </div>
   </div>
 </template>

@@ -115,7 +115,7 @@ p {
   background: white;
 }
 .container-price a:hover {
-  background: rgb(252, 218, 30);
+  background: #FAC8A2;
   color: black;
 }
 .container-price {

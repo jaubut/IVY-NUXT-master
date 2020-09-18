@@ -6,7 +6,7 @@
         <h2 class="">
           {{ pageevenement.fields.title }}<br>
         </h2>
-        <a class="reserve" target="_blank" href="https://www.facebook.com/pg/espaceivy/events/?ref=page_internal">Mise à jour sur facebook</a>
+        <a class="reserve" target="_blank" href="https://www.facebook.com/pg/ivyyoga.ca/events/?ref=page_internal">Mise à jour sur facebook</a>
       </div>
     </div>
     <h2 class="section-title margin-event">
@@ -79,7 +79,7 @@ export default {
   align-items: center;
   border: none;
   color: black;
-  background-color: #FCDA1E;
+  background-color: #FAC8A2;
   padding: 0.25rem 0.75rem;
   min-width: 10rem;
   height: 3rem;

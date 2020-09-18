@@ -57,13 +57,13 @@ a {
     transition: 0.5s ease;
 }
 a:hover {
-    color: #FCDA1E;
+    color: #FAC8A2;
 }
 .white {
     color: white;
 }
 .yellow {
-    color: #FCDA1E;
+    color: #FAC8A2;
 }
 .full-width {
     display: grid;

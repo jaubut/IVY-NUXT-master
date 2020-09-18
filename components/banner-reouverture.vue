@@ -28,7 +28,7 @@ export default {
 
 <style>
 .prix-a {
-  color: #fcda1e;
+  color: #FAC8A2;
 }
 .prix-b {
   text-decoration: line-through;

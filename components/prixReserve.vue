@@ -115,7 +115,7 @@ h4 {
   align-items: center;
   border: none;
   color: black;
-  background-color: #FCDA1E;
+  background-color: #FAC8A2;
   width: 10rem;
   height: 3rem;
   border-radius: 5px;

@@ -58,7 +58,7 @@
     </div>
     <div v-else class="container-prix">
       <div class="prices container-price">
-        <h2>27$ <span class="prix-b">30 $</span> le mois</h2>
+        <h2>30 $ le mois</h2>
         <p>Accède à toutes les classes en ligne sur le <a href="https://www.facebook.com/groups/2350913745213806/" target="_blank"><span>groupe Facebook privé: Ivy Yoga - Cours en Ligne</span></a>.</p>
         <a href="https://ivy-yoga.us5.list-manage.com/track/click?u=969c1f8068212429343512f19&id=37f1515db1&e=2e85ef66bd" target="_blank" class="button-virtuel cta-prix active">Achetez</a>
       </div>

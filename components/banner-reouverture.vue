@@ -2,9 +2,11 @@
   <div class="container-block">
     <div class="infos-center-v-two" style="margin:2rem 0;">
       <h1>Mois d'introduction<br>pour seulement <span class="prix-a">50 $</span> !</h1>
+      <!--
       <br>
       <img src="@/assets/img/yoga/intro.jpg" style="width:50vw;" alt="">
       <br>
+      -->
       <h3 style="" class="text-cover">
         <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank">(valable 1 fois par personne)</a>
       </h3>
@@ -14,7 +16,7 @@
     </video>
     -->
       <div class="button-group">
-        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank" class="button-virtuel c active">Me procurer mon mois d'introduction à 45 $</a>
+        <a href="https://mindbody.io/deals/ivy-espace-yoga-arts-communaute/intro-offer-100023" target="_blank" class="button-virtuel c active">Me procurer mon mois d'introduction à 50 $</a>
       </div>
     </div>
   </div>

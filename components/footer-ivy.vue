@@ -11,7 +11,7 @@
     <div class="infos-footer footer-icon">
       <a href="https://www.instagram.com/ivyyoga.ca/" target="_blank"><i class="fab fa-instagram" /></a>
       <a href="https://www.facebook.com/ivyyoga.ca/" target="_blank"><i class="fab fa-facebook-square" /></a>
-      <a title="450-775-8112" href="tel:15149149859" target="_blank"><i class="fas fa-phone-alt" /></a>
+      <a title="5149149859" href="tel:1c" target="_blank"><i class="fas fa-phone-alt" /></a>
       <a title="jeremie.aubut@gmail.com" href="mailto:espace@ivy-yoga.ca" target="_blank"><i class="far fa-envelope" /></a>
     </div>
   </div>
